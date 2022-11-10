@@ -69,25 +69,11 @@ namespace StudentDetail.Repository
                     data.StudentFirstName = info.Student_FirstName;
                     data.StudentLastName = info.Student_LastName;
                     data.StudentGender = info.Student_Gender;
-                    if (info.Student_Location != null)
-                    {
-                        data.StudentLocation = info.Student_Location;
-                    }
-                    else
-                    {
-                        data.StudentLocation = "-";
-                    }
+                    data.StudentLocation = info.Student_Location;
                     data.StudentDepartment = info.Student_Department;
                     data.StudentClass = info.Student_Class;
                     data.StudentAge = info.Student_Age;
-                    if (info.Student_Location != null)
-                    {
-                        data.YearOfJoining = info.Year_Of_Joining;
-                    }
-                    else
-                    {
-                        data.YearOfJoining = "-";
-                    }
+                    data.YearOfJoining = info.Year_Of_Joining;
                     studentInfos.Add(data);
                 }
                 return studentInfos;

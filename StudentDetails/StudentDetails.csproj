@@ -8,6 +8,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\StudentDetail.Core\StudentDetail.Core.csproj" />
+    <ProjectReference Include="..\StudentDetail.Repository\StudentDetail.Repository.csproj" />
+    <ProjectReference Include="..\StudentDetail.Service\StudentDetail.Service.csproj" />
   </ItemGroup>
 
 </Project>

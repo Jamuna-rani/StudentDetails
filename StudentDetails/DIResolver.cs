@@ -29,7 +29,7 @@ namespace StudentDetail.Utility
 
             #region Repository
             //for Repository accessing 
-            services.AddScoped<IStudentDetailRepository, StudentDetailRepository>();
+            services.AddScoped<IStudentDetailRepository,StudentDetailRepository>();
             #endregion
         }
     }

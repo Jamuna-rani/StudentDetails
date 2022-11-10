@@ -60,7 +60,7 @@ namespace StudentDetail.Entity
 
                 entity.Property(e => e.Student_LastName)
                     .IsRequired()
-                    .HasMaxLength(10)
+                    .HasMaxLength(20)
                     .IsUnicode(false);
 
                 entity.Property(e => e.Student_Location)
@@ -73,7 +73,8 @@ namespace StudentDetail.Entity
 
                 entity.Property(e => e.Year_Of_Joining)
                     .HasMaxLength(4)
-                    .IsUnicode(false);
+                    .IsUnicode(false)
+                    .HasDefaultValueSql("('-')");
             });
 
             OnModelCreatingPartial(modelBuilder);
